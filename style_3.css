@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+}
+
+nav {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.bar {
+    height: 5px;
+    width: 12px;
+    animation: change-height 0.45s infinite alternate;
+}
+
+.red {
+    background-color: #E50000;
+    box-shadow: 1px 1px 10px #E50000;
+    animation-delay: 0.1S;
+}
+
+.orange {
+    background-color: #E58d00;
+    box-shadow: 1px 1px 10px #E58d00;
+    animation-delay: 0.2S;
+}
+
+.yellow {
+    background-color: #FFEE00;
+    box-shadow: 1px 1px 10px #FFEE00;
+    animation-delay: 0.25S;
+}
+
+.green {
+    background-color: #008121;
+    box-shadow: 1px 1px 10px #008121;
+    animation-delay: 0.3S;
+}
+
+.blue {
+    background-color: #004cff;
+    box-shadow: 1px 1px 10px #004cff;
+    animation-delay: 0.35S;
+}
+
+.violet {
+    background-color: #760188;
+    box-shadow: 1px 1px 10px #760188;
+    animation-delay: 0.4S;
+}
+
+@keyframes change-height {
+
+    from{
+        height: 5px;
+    }
+
+    to {
+        height: 40px;
+    }
+
+}

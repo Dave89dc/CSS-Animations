@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    padding: 20px;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: darkslateblue;
+    animation-name: animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
+
+.box:hover {
+    animation-name: hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
+
+@keyframes animation {
+    
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+}
+
+@keyframes hover {
+    
+    0% {
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        background-color: crimson;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        background-color: deepskyblue;
+    }
+
+}
