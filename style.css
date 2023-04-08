@@ -79,12 +79,12 @@ h1 {
         transform: rotate(0deg);
         background-color: blue;
     }
-
+    
     50% {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
         background-color: crimson;
     }
-
+    
     100% {
         transform: rotate(0deg);
         background-color: deepskyblue;
